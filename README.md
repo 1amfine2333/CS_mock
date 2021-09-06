@@ -102,5 +102,43 @@ Connection: Keep-Alive
 Cache-Control: no-cache
 ```
 
+Beacon 通信原理：
+https://wbglil.gitbook.io/cobalt-strike/cobalt-strike-yuan-li-jie-shao/cs-mu-biao-shang-xian-guo-cheng
+
+`java -cp cobaltstrike.jar: DumpKeys`
+
+```
+Private Key: MIICdwIBADANBgkqhkiG9w0BAQEFAASCAmEwggJdAgEAAoGBAKh425X8qQKXt0fB3KXwIifWjmce9XGq4SzeTnznT1yiOT5qtbx1LN89rZ5WuMe1zisx3tYYuJ/gAD0VoHAeAh1nwn0rjFTVX3BbEXqIgUdw5PTgpwV1mcnideAwWsjuPhNgrW6BL2pXy7sLc15yuXfy9G84+LSQxgyJE7kq1PQrAgMBAAECgYEAjLzJ07ZKChxrw8ozZXwBTH50X7kBGX/CtBTSRI2HQr9SSs4iG9lXLvb7fva7TjqWjIcQvJHSSdx61oymhoLLCB33l5dqynLWOSIR1fXuJ63aC4e9/VKdzU2ee9ebOeYch98r78xlMGNWnHBxYw0+1Q5t0O0TWRn7ogDEhzRW7OECQQD0dhVQetTfcEtOqs7i3PFZhE7Lw6DZciIib97BsvCufqgCwi8szRs04UEig5/RS0jW2yufCyv89QTb+OpGWv3XAkEAsGyRrqd6P5Y+zWR7ZGIxHRyPZ3VyVfadNCzws4JMiyG3vHfLC8omP0tdBE95NUtiUKlvxC271qknQ+IxEKnpzQJAGvBgTOwcRTsksViVT961If44iK/YK94t8MmPLJ1BdJk0folTlYZMtzkTanBCzleTgUnJts8OW+PMU0lM18/zJQJBAKsHhS9IwpVUJOvehlRpcG1lW4wTalT1r65+BpYvMd8LP+CgTSHPxcZEXBcqqDlHLDdAGs6W+2r9Lsh7Rc9+uN0CQEoitgXTiPRKbi9ieqan67uJUuWN7ZNmFdKmKTw2Vel4bNqAD4+Aw+dDM5N16QZKg/J32dzp73fSqCLcEYdh+aQ=
+
+Public Key: MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCoeNuV/KkCl7dHwdyl8CIn1o5nHvVxquEs3k58509cojk+arW8dSzfPa2eVrjHtc4rMd7WGLif4AA9FaBwHgIdZ8J9K4xU1V9wWxF6iIFHcOT04KcFdZnJ4nXgMFrI7j4TYK1ugS9qV8u7C3Necrl38vRvOPi0kMYMiRO5KtT0KwIDAQAB
+
+```
+
+RSA 私钥解密
+
+https://the-x.cn/zh-cn/cryptography/Rsa.aspx
+
+```
+BArv+naOZOElxtW3xTdGiAli5OvocO6RjwZ8McZa6fJEoS6l0vsd2uiQB1UFXHxToOXaOP3OVNEfI5dr1vmdF+f423O8Kf0PlSgGdQH8UWD6C/ajW+jZL1UmIWZz1Rxo7fP1pCntQVVHB/apAifQPTFqLngc4opGtC5y/9tL4aU=
+```
+
+
+格式：
+
+computer_name =>> nY0Er
+
+user_name =>> eqB2JD
+
+process_name =>> wdUsWA
+
+```
+00 01 02 03 04 05 06 07  08 09 0A 0B 0C 0D 0E 0F 
+--------------------------------------------------------------------
+00 00 BE EF 00 00 00 47  08 09 01 09 03 09 02 00   | .......G........
+0C 08 04 06 0B 01 0E 0B  A8 03 A8 03 00 57 03 6A   | .............W.j
+00 00 50 BB 00 00 04 06  02 23 F0 00 00 00 00 76   | ..P......#.....v
+91 0A 60 76 90 F5 50 0D  0C 02 04 6E 59 30 45 72   | ..`v..P....nY0Er
+48 09 65 71 42 32 4A 44  09 77 64 55 73 57 41     | H.eqB2JD.wdUsWA
+```
 
 
