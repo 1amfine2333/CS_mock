@@ -15,57 +15,57 @@ Remember to remove the extra padding from the public key
 
 ```
 Nmap scan report for 10.10.26.164
-Host is up (0.0011s latency).
+Host is up (0.0019s latency).
 
 PORT   STATE SERVICE
 80/tcp open  http
 | grab_beacon_config_rsa:
-|   x64:
-|     sha256: 9356599e4b2c5d7bf63e309194df96cf8a763734aad80bc6dd78b8d1afb7e031
-|     uri_queried: /4Ovd
-|     config:
-|       RSA Public Key: MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCoeNuV/KkCl7dHwdyl8CIn1o5nHvVxquEs3k58509cojk+arW8dSzfPa2eVrjHtc4rMd7WGLif4AA9FaBwHgIdZ8J9K4xU1V9wWxF6iIFHcOT04KcFdZnJ4nXgMFrI7j4TYK1ugS9qV8u7C3Necrl38vRvOPi0kMYMiRO5KtT0KwIDAQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
-|       HTTP Method Path 2: /jquery-3.3.2.min.js
-|       Beacon Type: 0 (HTTP)
-|       C2 Host Header:
-|       Method 1: GET
-|       Spawn To x64: %windir%\sysnative\WerFault.exe
-|       Watermark: 1234567890
-|       C2 Server: 10.10.26.164,/jquery-3.3.1.min.js
-|       Method 2: POST
-|       Polling: 12022
-|       Port: 80
-|       Spawn To x86: %windir%\syswow64\WerFault.exe
-|       Jitter: 50
-|     sha1: 38fdc6f969f36518fcf4fd7116796152106b043c
-|     md5: c64c52fddcf2853d7abb3500767be056
-|     time: 1630908799494.2
 |   x86:
-|     sha256: 5889ac714f26c99d3e1ca63bb5508f69a1e501728cc8561c782c5b86592cf059
-|     uri_queried: /HjIa
+|     time: 1630913440646.5
+|     sha256: e85b3ab8b81cf843b02b8c4e2a25766cd1ccc347dfa48e9ede3f1f128aad5ff7
 |     config:
-|       RSA Public Key: MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCoeNuV/KkCl7dHwdyl8CIn1o5nHvVxquEs3k58509cojk+arW8dSzfPa2eVrjHtc4rMd7WGLif4AA9FaBwHgIdZ8J9K4xU1V9wWxF6iIFHcOT04KcFdZnJ4nXgMFrI7j4TYK1ugS9qV8u7C3Necrl38vRvOPi0kMYMiRO5KtT0KwIDAQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
-|       HTTP Method Path 2: /jquery-3.3.2.min.js
-|       Beacon Type: 0 (HTTP)
+|       RSA Public Key: MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCoeNuV/KkCl7dHwdyl8CIn1o5nHvVxquEs3k58509cojk+arW8dSzfPa2eVrjHtc4rMd7WGLif4AA9FaBwHgIdZ8J9K4xU1V9wWxF6iIFHcOT04KcFdZnJ4nXgMFrI7j4TYK1ugS9qV8u7C3Necrl38vRvOPi0kMYMiRO5KtT0KwIDAQAB
+|       Jitter: 0
+|       C2 Server: 10.10.26.164,/load
+|       Spawn To x64: %windir%\sysnative\rundll32.exe
 |       C2 Host Header:
-|       Method 1: GET
-|       Spawn To x64: %windir%\sysnative\WerFault.exe
-|       Watermark: 1234567890
-|       C2 Server: 10.10.26.164,/jquery-3.3.1.min.js
-|       Method 2: POST
-|       Polling: 12022
+|       Polling: 60000
 |       Port: 80
-|       Spawn To x86: %windir%\syswow64\WerFault.exe
-|       Jitter: 50
-|     sha1: 3a7151d820dbe044031007c047b2a210e155f4c5
-|     md5: b09ed49ea84ed65204ae81a05d97fa88
-|_    time: 1630908798221.7
+|       Watermark: 1234567890
+|       Method 2: POST
+|       Method 1: GET
+|       HTTP Method Path 2: /submit.php
+|       Spawn To x86: %windir%\syswow64\rundll32.exe
+|       Beacon Type: 0 (HTTP)
+|     md5: 20e1378670b0d882f8ffb4e5e3ee0d9d
+|     uri_queried: /HjIa
+|     sha1: 48aecd9afe30e2dcafc456cbe4cd5fa2986c2217
+|   x64:
+|     time: 1630913441918.8
+|     sha256: f4e4f1f97aed0eea7ddaf2d3c5b60005fac38befba13d0804732e45eecec22fd
+|     config:
+|       RSA Public Key: MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCoeNuV/KkCl7dHwdyl8CIn1o5nHvVxquEs3k58509cojk+arW8dSzfPa2eVrjHtc4rMd7WGLif4AA9FaBwHgIdZ8J9K4xU1V9wWxF6iIFHcOT04KcFdZnJ4nXgMFrI7j4TYK1ugS9qV8u7C3Necrl38vRvOPi0kMYMiRO5KtT0KwIDAQAB
+|       Jitter: 0
+|       C2 Server: 10.10.26.164,/__utm.gif
+|       Spawn To x64: %windir%\sysnative\rundll32.exe
+|       C2 Host Header:
+|       Polling: 60000
+|       Port: 80
+|       Watermark: 1234567890
+|       Method 2: POST
+|       Method 1: GET
+|       HTTP Method Path 2: /submit.php
+|       Spawn To x86: %windir%\syswow64\rundll32.exe
+|       Beacon Type: 0 (HTTP)
+|     md5: 8478e44aff0b52772697f5bfcf4e24b0
+|     uri_queried: /4Ovd
+|_    sha1: c6bdfdacd266e6024da8cccd7c7b251bad247e3f
 
-Nmap done: 1 IP address (1 host up) scanned in 3.83 seconds
+Nmap done: 1 IP address (1 host up) scanned in 3.41 seconds
 
 ```
 
-RSA Public Key delete AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+RSA Public Key 
 
 ```
 MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCoeNuV/KkCl7dHwdyl8CIn1o5nHvVxquEs3k58509cojk+arW8dSzfPa2eVrjHtc4rMd7WGLif4AA9FaBwHgIdZ8J9K4xU1V9wWxF6iIFHcOT04KcFdZnJ4nXgMFrI7j4TYK1ugS9qV8u7C3Necrl38vRvOPi0kMYMiRO5KtT0KwIDAQAB
