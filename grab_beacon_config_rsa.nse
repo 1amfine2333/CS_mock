@@ -112,7 +112,7 @@ local function parse_field(key_name, contents, hex_flag, format)
         if index == nil then
             return nil
         end
-        return base64.enc(string.sub(contents, index + string.len(hex_flag), index + string.len(hex_flag) + 192))
+	return string.sub(base64.enc(string.sub(contents, index + string.len(hex_flag), index + string.len(hex_flag) + 192)),0,216)
 
     else
         index = string.find(contents, hex_flag, 1, true)
