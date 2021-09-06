@@ -146,3 +146,17 @@ process_name =>> wdUsWA
 ```
 
 
+#### Example:
+![](./cs.png)
+
+```
+base64: S6/WGjAUXnLfW0d1tPRZ1E6Kjb8VN4VEW0s2EpBOPrIm4ulqKPyGbtcYOW2tnum5LwgeoBcSQ62v0bBndR8bUayzB4Dv3UZHXw55KyVb7Ct2ErCOh4ofotdROht9mtf64Z/dUDzR0u/JcTQ68jqIGgn4b5EnTCcK/GbIgMBH7mc=
+00000000: 00 00 BE EF 00 00 00 4B  09 04 06 03 02 0A 09 0F  .......K........
+00000010: 07 0D 00 09 02 0E 04 00  A8 03 A8 03 00 6E 5D 1C  .............n].
+00000020: 00 00 15 8C 00 00 04 06  02 23 F0 00 00 00 00 76  .........#.....v
+00000030: 91 0A 60 76 90 F5 50 01  08 00 00 48 66 35 39 42  ..`v..P....Hf59B
+00000040: 70 09 67 77 39 46 64 79  09 51 4C 61 33 71 59 2E  p.gw9Fdy.QLa3qY.
+00000050: 65 78 65                                          exe
+
+```
+
