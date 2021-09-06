@@ -114,6 +114,7 @@ Public Key: MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCoeNuV/KkCl7dHwdyl8CIn1o5nHvVx
 
 ```
 
+![](./rsa.png)
 RSA 私钥解密
 
 https://the-x.cn/zh-cn/cryptography/Rsa.aspx
@@ -125,12 +126,15 @@ BArv+naOZOElxtW3xTdGiAli5OvocO6RjwZ8McZa6fJEoS6l0vsd2uiQB1UFXHxToOXaOP3OVNEfI5dr
 
 格式：
 
+```
 computer_name =>> nY0Er
 
 user_name =>> eqB2JD
 
 process_name =>> wdUsWA
+```
 
+#### hex + ascil
 ```
 00 01 02 03 04 05 06 07  08 09 0A 0B 0C 0D 0E 0F 
 --------------------------------------------------------------------
