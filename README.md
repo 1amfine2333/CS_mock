@@ -9,6 +9,23 @@ Remember to remove the extra padding from the public key
 ![](CSMOCK.png)
 
 
+### 注意事项
+
+经过检测，nmap脚本存在解析字段 prepend 丢失，建议使用 parse_beacon_config.py 脚本，能正确解析 `Metadata` 原数据 提交字段的参数值 `__cfduid=`
+
+例如：
+
+
+```
+curl -A O -o 4Ovd -L http://c2.x.x.x/4Ovd
+
+python3 parse_beacon_config.py --version 4 --json 4Ovd
+```
+
+```
+"Metadata": ["base64url", "prepend \"__cfduid=\""
+```
+
 ### 0x01 nmap scan from c2 server
 
 `$ cScan 10.10.26.164 80`
